@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuliner Indonesia</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <!-- Panggil Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Banner -->
+  <header>
+    <h1>Kuliner Indonesia</h1>
+    <p>Menyelami cita rasa nusantara dari Sabang hingga Merauke — setiap daerah punya kelezatan dan cerita tersendiri.</p>
+    <a href="#deskripsi">Read More</a>
+  </header>
+
+  <!-- Deskripsi -->
+  <section id="deskripsi">
+    <h2>Kekayaan Kuliner Nusantara</h2>
+    <p>
+      Indonesia dikenal sebagai surga kuliner dunia. Setiap daerah memiliki cita rasa khas yang dipengaruhi budaya, rempah, dan kearifan lokal.
+      Dari rendang Minang, gudeg Jogja, hingga papeda dari Timur, semuanya menampilkan keindahan rasa dan tradisi yang tak lekang oleh waktu.
+    </p>
+  </section>
+
+  <!-- Galeri Kuliner -->
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="image/rendang.jfif" alt="Rendang">
+      <div class="desc">
+        <h3>Rendang - Sumatera Barat</h3>
+        <p>Masakan daging berbumbu khas Minangkabau yang mendunia karena rasa gurih dan rempahnya yang kaya.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/sate.jfif" alt="Sate Madura">
+      <div class="desc">
+        <h3>Sate Madura - Jawa Timur</h3>
+        <p>Daging tusuk bakar dengan bumbu kacang yang menggugah selera dan aroma khas arang bakar.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/gudeg.jfif" alt="Gudeg">
+      <div class="desc">
+        <h3>Gudeg - Yogyakarta</h3>
+        <p>Olahan nangka muda manis gurih yang menjadi ikon kuliner khas Kota Pelajar.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/pempek.jpg" alt="Pempek">
+      <div class="desc">
+        <h3>Pempek - Palembang</h3>
+        <p>Ikan giling dan sagu disajikan dengan kuah cuko asam manis pedas yang segar.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/rawon.jpg" alt="Rawon">
+      <div class="desc">
+        <h3>Rawon - Surabaya</h3>
+        <p>Sup daging berkuah hitam dari kluwek yang memberi rasa unik dan aroma khas.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/papeda.jpg" alt="Papeda">
+      <div class="desc">
+        <h3>Papeda - Papua</h3>
+        <p>Bubur sagu khas Papua yang disajikan dengan kuah ikan kuning nan segar.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/soto.jpg" alt="Soto Betawi">
+      <div class="desc">
+        <h3>Soto Betawi - Jakarta</h3>
+        <p>Kuah santan gurih berpadu daging sapi dan aroma rempah yang menggoda selera.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="image/ikan bakar.jfif" alt="Ikan Bakar">
+      <div class="desc">
+        <h3>Ikan Bakar - Sulawesi</h3>
+        <p>Ikan segar dibakar dengan bumbu rica atau dabu-dabu khas yang pedas menyegarkan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Kuliner Indonesia</h2>
+        <p>Menyatukan rasa dan budaya dalam setiap sajian — dari Sabang hingga Merauke.</p>
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#deskripsi">Tentang</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Kuliner Indonesia. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Tombol Scroll Up -->
+  <button id="toTop" title="Kembali ke atas">↑</button>
+
+  <script>
+    const toTop = document.getElementById("toTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        toTop.style.display = "block";
+      } else {
+        toTop.style.display = "none";
+      }
+    };
+    toTop.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>

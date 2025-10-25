@@ -1,0 +1,150 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      scroll-behavior: smooth;
+      background-color: #fffdf9;
+    }
+
+    /* Banner */
+    header {
+      position: relative;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    /* Foto blur di belakang */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('../image/cr8sasfhb2a3n6e.jpeg') center/cover no-repeat;
+      filter: blur(2px) brightness(70%);
+      transform: scale(1.1);
+      z-index: -1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    header a {
+      background-color: #ff9800;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background-color: #e68900;
+    }
+
+    /* Section Deskripsi */
+    section#deskripsi {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    section#deskripsi h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section#deskripsi p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #555;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    /* Galeri */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 60px 20px;
+      background-color: #fff7ec;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .gallery-item .desc {
+      padding: 15px;
+    }
+
+    .gallery-item h3 {
+      color: #ff9800;
+      margin-bottom: 8px;
+    }
+
+    .gallery-item p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Tombol Up */
+    #toTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    #toTop:hover {
+      background: #e68900;
+    }
+
+    /* Responsif */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
